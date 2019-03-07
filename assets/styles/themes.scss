@@ -1,0 +1,110 @@
+$background-default-color: $metal-grey-color;
+$resume-background-color: $paper-white-color;
+$printing-background-color: $white-color;
+$a-color-override: $black-color;
+@media print {
+  a {
+    text-decoration: none !important;
+  }
+
+  html, body {
+    border: 0 none !important;
+    height:100% !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  @page {
+    bleed: 0 !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    size: letter;
+  }
+
+  .resume {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+a {
+  color: $a-color-override;
+  text-decoration: none;
+}
+
+body {
+  background-color: $background-default-color;
+  background-image: url("https://i.imgur.com/2aEAsTA.jpg");
+  background-size: cover;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.bottom-summary-spacer {
+  line-height: 0.3;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+.heading-name {
+  line-height: 1;
+}
+
+.heading-position {
+  line-height: 0.2;
+}
+
+.heading-location {
+  line-height: 1.8;
+}
+
+html {
+  box-sizing: content-box;
+}
+
+.skills-additional {
+  padding-bottom: 0;
+  transform: translateY(-.8em);
+}
+
+.skills-interests {
+  transform: translateY(-1.6em);
+}
+
+.personal-summary {
+  font-size: 0.917em;
+}
+
+.project-title {
+  text-decoration: underline;
+}
+
+.resume {
+  background-color: $resume-background-color;
+  padding: 1.875em 1.25em 1.25em;
+  width: 62.5em;
+  height: 80.875em;
+  border: .0625em solid black;
+  box-shadow: .625em .625em 3em .3125em rgba(0,0,0,0.75);
+  overflow: hidden;
+}
+
+.white {
+  color: $white-color !important;
+}

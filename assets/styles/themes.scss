@@ -2,31 +2,31 @@ $background-default-color: $metal-grey-color;
 $resume-background-color: $paper-white-color;
 $printing-background-color: $white-color;
 $a-color-override: $black-color;
+
 @media print {
   a {
     text-decoration: none !important;
   }
 
-  html, body {
+  body,
+  html {
     border: 0 none !important;
-    height:100% !important;
+    height: 100% !important;
     margin: 0 !important;
     overflow: hidden !important;
-    padding: 0 !important;
-    padding-right: 0 !important;
+    padding: 0 0 0 !important;
+    width: 100% !important;
   }
-
   @page {
-    bleed: 0 !important;
-    border: none !important;
+    border: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
     size: letter;
   }
 
   .resume {
-    background-color: white;
-    border: none;
+    background-color: $white-color;
+    border: 0 none !important;
     box-shadow: none;
     margin: 0;
     padding: 0;
@@ -45,12 +45,12 @@ body {
   display: flex;
   font-family: 'Lato', sans-serif;
   justify-content: center;
-  padding-top: 5%;
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .bottom-summary-spacer {
-  line-height: 0.3;
+  line-height: .3;
 }
 
 h1 {
@@ -67,7 +67,7 @@ h4 {
 }
 
 .heading-position {
-  line-height: 0.2;
+  line-height: .2;
 }
 
 .heading-location {
@@ -88,7 +88,7 @@ html {
 }
 
 .personal-summary {
-  font-size: 0.917em;
+  font-size: .917em;
 }
 
 .project-title {
@@ -97,12 +97,12 @@ html {
 
 .resume {
   background-color: $resume-background-color;
+  border: .0625em solid $black-color;
+  box-shadow: .625em .625em 3em .3125em rgba(0, 0, 0, .75);
+  height: 80.875em;
+  overflow: hidden;
   padding: 1.875em 1.25em 1.25em;
   width: 62.5em;
-  height: 80.875em;
-  border: .0625em solid black;
-  box-shadow: .625em .625em 3em .3125em rgba(0,0,0,0.75);
-  overflow: hidden;
 }
 
 .white {

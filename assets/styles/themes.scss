@@ -2,7 +2,6 @@ $background-default-color: $metal-grey-color;
 $resume-background-color: $paper-white-color;
 $printing-background-color: $white-color;
 $a-color-override: $black-color;
-
 @media print {
   a {
     text-decoration: none !important;
@@ -29,13 +28,20 @@ $a-color-override: $black-color;
     border: 0 none !important;
     box-shadow: none;
     margin: 0;
-    padding: 0;
+    padding: 3em;
   }
 }
 
 a {
   color: $a-color-override;
   text-decoration: none;
+}
+
+address {
+  border-bottom: 1px solid $black-color;
+  border-top: 1px solid $black-color;
+  display: flex;
+  justify-content: space-around;
 }
 
 body {
@@ -47,10 +53,14 @@ body {
   justify-content: center;
   padding-bottom: 5%;
   padding-top: 5%;
+
+  .resume {
+    padding: 3em;
+  }
 }
 
 .bottom-summary-spacer {
-  line-height: .3;
+  line-height: 0.3;
 }
 
 h1 {
@@ -67,7 +77,7 @@ h4 {
 }
 
 .heading-position {
-  line-height: .2;
+  line-height: 0.2;
 }
 
 .heading-location {
@@ -88,7 +98,7 @@ html {
 }
 
 .personal-summary {
-  font-size: .917em;
+  font-size: 0.917em;
 }
 
 .project-title {
@@ -97,8 +107,8 @@ html {
 
 .resume {
   background-color: $resume-background-color;
-  border: .0625em solid $black-color;
-  box-shadow: .625em .625em 3em .3125em rgba(0, 0, 0, .75);
+  border: 0.0625em solid $black-color;
+  box-shadow: 0.625em 0.625em 3em 0.3125em rgba(0, 0, 0, .75);
   height: 80.875em;
   overflow: hidden;
   padding: 1.875em 1.25em 1.25em;

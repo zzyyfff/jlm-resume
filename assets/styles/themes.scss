@@ -28,7 +28,10 @@ $a-color-override: $black-color;
     border: 0 none !important;
     box-shadow: none;
     margin: 0;
-    padding: 3em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em !important;
   }
 }
 
@@ -55,12 +58,28 @@ body {
   padding-top: 5%;
 
   .resume {
-    padding: 3em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
   }
 }
 
 .bottom-summary-spacer {
   line-height: 0.3;
+}
+
+.cfb-and-interim {
+  margin-top: -.3em;
+}
+
+.edu-awards {
+  margin-bottom: .1em;
+  margin-top: .2em;
+}
+
+.fun-fact {
+  transform: translateY(-2.4em);
 }
 
 h1 {
@@ -101,8 +120,9 @@ html {
   font-size: 0.917em;
 }
 
-.project-title {
-  text-decoration: underline;
+.project-middle {
+  border-left: 1px solid $black-color;
+  border-right: 1px solid $black-color;
 }
 
 .resume {

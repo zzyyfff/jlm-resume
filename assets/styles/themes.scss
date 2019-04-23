@@ -67,27 +67,16 @@ body {
 }
 
 .bottom-summary-spacer {
-  line-height: 0.3;
+  line-height: .3;
 }
 
-.cfb-and-interim {
-  // margin-top: -.3em;
-}
-
-.edu-awards {
+.education-title {
   margin-bottom: .1em;
 }
 
-.fun-fact {
-  transform: translateY(-2.2em);
-}
-
 .fun-fact-body {
-  padding-left: 1rem;
-}
-
-.org-title {
   margin-top: -.3rem;
+  padding-left: 1rem;
 }
 
 h1 {
@@ -114,7 +103,7 @@ h4 {
 }
 
 .heading-position {
-  line-height: 0.2;
+  line-height: .2;
 }
 
 .heading-location {
@@ -125,18 +114,31 @@ html {
   box-sizing: content-box;
 }
 
+.innovation-making {
+  margin-top: .4em;
+}
+
 .leadership-pm {
   margin-bottom: -.6rem;
-  margin-top: .3rem;
+  margin-top: 1rem;
 }
 
-.skills-additional {
+.left-sidebar-section {
+  margin-top: -.8em;
   padding-bottom: 0;
-  transform: translateY(-.8em);
 }
 
-.skills-interests {
-  transform: translateY(-1.6em);
+// don't put a negative margin on the first section, "Skills"
+.left-sidebar-section:first-of-type {
+  margin-top: 0;
+}
+
+.left-sidebar-section > ul {
+  margin-top: -.3em;
+}
+
+.org-title {
+  margin-top: -.3rem;
 }
 
 .personal-summary {
@@ -157,6 +159,7 @@ html {
   border: 0.0625em solid $black-color;
   box-shadow: 0.625em 0.625em 3em 0.3125em rgba(0, 0, 0, .75);
   height: 80.875em;
+  min-width: 62.5em;
   overflow: hidden;
   padding: 1.875em 1.25em 1.25em;
   width: 62.5em;
